@@ -59,4 +59,14 @@
  
  17. 'How are you?' is printed because the == operator converts true to a number (and 2 != 1). However, the implicit Boolean conversion done by the else if statement on 2 returns true for any nonzero value. Therefore, the else if branch is chosen and 'How are you?' is printed.
  
+ 18. in JS file
+ 
  19. For each element in the array [1, 2, 3], there is a new element added to newArr that is the result of doSomething with that as its input and a doubling function. doSomething takes its input function and calls it with the parameter of its input number + 2. Therefore, the first iteration pushes (1 + 2) * 2 = 6, the second iteration pushes (2 + 2) * 2 = 8, and the third iteration pushes (3 + 2) * 2 = 10. Therefore, newArr is returned, or [6, 8, 10].
+ 
+ 20. in JS file
+ 
+ 21.
+    1
+    3
+    4
+    2
