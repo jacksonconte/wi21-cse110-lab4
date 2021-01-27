@@ -51,12 +51,12 @@
     
     d. false; strict equality differentiates types
     
-    e. false; true is converted to the number 1, and 1 /= 2
+    e. false; true is converted to the number 1, and 1 != 2
     
     f. true; nonzero value 2 is converted to true with boolean function; strict equality passes since types are same
     
  16. The == operator automatically converts both operands to numbers, while the === operator checks types first and returns false if they are different. It only returns true if types *and* values are equal.
  
- 17. 'How are you?' is printed because the == operator converts true to a number (and 2 /= 1). However, the implicit Boolean conversion done by the else if statement on 2 returns true for any nonzero value. Therefore, the else if branch is chosen and 'How are you?' is printed.
+ 17. 'How are you?' is printed because the == operator converts true to a number (and 2 != 1). However, the implicit Boolean conversion done by the else if statement on 2 returns true for any nonzero value. Therefore, the else if branch is chosen and 'How are you?' is printed.
  
  19. For each element in the array [1, 2, 3], there is a new element added to newArr that is the result of doSomething with that as its input and a doubling function. doSomething takes its input function and calls it with the parameter of its input number + 2. Therefore, the first iteration pushes (1 + 2) * 2 = 6, the second iteration pushes (2 + 2) * 2 = 8, and the third iteration pushes (3 + 2) * 2 = 10. Therefore, newArr is returned, or [6, 8, 10].
