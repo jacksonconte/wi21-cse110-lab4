@@ -42,5 +42,20 @@
     h. NaN; - operator is not overloaded for string operation, so 3 is converted to a number and undefined is converted to NaN.
     
 15. Comparison
-    a. 
+
+    a. true; different types so '2' is converted to number
+    
+    b. false; '2' is greater in lexicographical order than '1'. Comparison stops here.
+    
+    c. true; different types so '2' is converted to number
+    
+    d. false; strict equality differentiates types
+    
+    e. false; true is converted to the number 1, and 1 /= 2
+    
+    f. true; nonzero value 2 is converted to true with boolean function; strict equality passes since types are same
+    
+ 16. The == operator automatically converts both operands to numbers, while the === operator checks types first and returns false if they are different. It only returns true if types *and* values are equal.
+ 
+ 17. 'How are you?' is printed because the == operator converts true to a number (and 2 /= 1). However, the implicit Boolean conversion done by the else if statement on 2 returns true for any nonzero value. Therefore, the else if branch is chosen and 'How are you?' is printed.
     
